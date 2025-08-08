@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: #0b1020; color: #e9ebf0; }
+
+.container { max-width: 720px; margin: 0 auto; padding: 32px 20px; }
+
+h1 { margin: 0 0 16px; font-weight: 700; font-size: 28px; letter-spacing: -0.02em; }
+
+.card { background: #111833; border: 1px solid #1b254d; border-radius: 12px; padding: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
+
+.form { display: flex; gap: 8px; margin-bottom: 12px; }
+.input { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid #2a366b; background: #0e1630; color: #e9ebf0; outline: none; }
+.input:focus { border-color: #4c7ef3; box-shadow: 0 0 0 3px rgba(76,126,243,0.2); }
+.button { padding: 10px 14px; border-radius: 8px; border: 1px solid #2a366b; background: #1b254d; color: #e9ebf0; cursor: pointer; }
+.button:hover { background: #25306a; }
+
+.list { list-style: none; margin: 0; padding: 0; }
+.item { display: flex; align-items: center; gap: 10px; padding: 10px 8px; border-bottom: 1px solid #1b254d; }
+.item:last-child { border-bottom: 0; }
+
+.checkbox { width: 18px; height: 18px; accent-color: #4c7ef3; }
+
+.title { flex: 1; }
+.title.completed { text-decoration: line-through; opacity: 0.65; }
+
+.row { display: flex; align-items: center; gap: 8px; }
+
+.pill { padding: 6px 10px; border-radius: 999px; border: 1px solid #2a366b; background: #0e1630; color: #c9d2f0; font-size: 12px; }
+
+.iconBtn { background: transparent; border: none; color: #b9c3e6; cursor: pointer; padding: 6px; border-radius: 6px; }
+.iconBtn:hover { background: #0e1630; color: #ffffff; }
+
+.footer { margin-top: 28px; color: #9aa7d9; font-size: 13px; text-align: center; }
+
+.filterBar { display: flex; gap: 8px; margin-top: 8px; }
+.filterBtn { padding: 6px 10px; border-radius: 8px; border: 1px solid #2a366b; background: #0e1630; color: #c9d2f0; cursor: pointer; font-size: 12px; }
+.filterBtn[aria-pressed="true"] { background: #1b254d; color: #fff; border-color: #4c7ef3; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
